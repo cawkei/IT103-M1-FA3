@@ -7,15 +7,6 @@ function CountInput() {
 }
 document.getElementById("btnCount").addEventListener("click", CountInput);
 
-//Email Check Function
-function CheckEmail() {
-    let emailInput = document.getElementById("userEmail").value;
-    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    let emailOutputField = emailPattern.test(emailInput) ? "Valid Email Address" : "Invalid Email Address"; 
-    document.getElementById("EmailResult").innerHTML = "Result here: " + emailOutputField;
-}
-document.getElementById("btnCheckEmail").addEventListener("click", CheckEmail);
-
 //Button effect
 const particleField = document.getElementById('particleField');
 function createParticles() {
